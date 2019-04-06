@@ -5,7 +5,6 @@ class LandingPage extends Component {
         return (
             <React.Fragment>
                 <h1>LandingPage</h1>
-                <Link to="/quiz">Show quizs</Link>
             </React.Fragment>
         );
     }
