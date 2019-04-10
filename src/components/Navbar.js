@@ -10,7 +10,7 @@ class Navbar extends Component {
                     <li><a href="/">Home</a></li> 
                     <li><a href="/surveys">Surveys</a></li>
                     <li><a href="/create-survey">Create survey</a></li>
-                    <li><a href="/">Log In</a></li>
+                    <li><a href="/login">Log In</a></li>
                 </ul>
                 </div>
             </nav>

@@ -3,9 +3,17 @@ import {Link} from "react-router-dom";
 class LandingPage extends Component {
     render() { 
         return (
-            <React.Fragment>
-                <h1>LandingPage</h1>
-            </React.Fragment>
+            <div className="card">
+                <div className="card-content"> 
+                    <div>
+                        <h3>LandingPage</h3>
+                    </div>
+                    <div>
+                           
+                    </div>
+                </div>
+                
+            </div>
         );
     }
 }
