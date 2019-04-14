@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 class QuizPage extends Component {
     constructor(){
@@ -18,6 +19,7 @@ class QuizPage extends Component {
     render() { 
         return ( 
             <React.Fragment>
+                 <Navbar/>
                 <div className="card">
                     <div className="card-content">
                         <h2>surveys</h2>

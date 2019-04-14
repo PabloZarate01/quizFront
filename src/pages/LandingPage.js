@@ -1,19 +1,35 @@
 import React, { Component } from 'react';
-import {Link} from "react-router-dom";
+import Navbar from '../components/Navbar';
 class LandingPage extends Component {
     render() { 
         return (
-            <div className="card">
-                <div className="card-content"> 
-                    <div>
-                        <h3>LandingPage</h3>
-                    </div>
-                    <div>
-                           
+            <React.Fragment>
+                <Navbar/>
+                <div class="row">
+                <div class="col s3">
+                    <div className="card">
+                        <div className="card-content">
+                            <span className="card-title">Title Of this card</span>
+                            <div class="divider"></div>
+                            <p>I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.</p>
+                        </div>
                     </div>
                 </div>
-                
-            </div>
+
+                <div class="col s9">
+                    <div className="card">
+                            <div className="card-content">
+                                <span className="card-title">Title Of this card</span>
+                                <div class="divider"></div>
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                    </div>
+                </div>
+            
+                </div>
+            </React.Fragment>
         );
     }
 }

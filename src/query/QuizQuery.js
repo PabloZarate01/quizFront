@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from '../components/Navbar';
 const Quiz = (props) =>(
     <li>{props.title}--{props.cuestion}--{props.votes}</li>
 )
@@ -10,7 +11,7 @@ class QuizList extends Component {
         }
     }
     componentWillMount(){
-        fetch('http://localhost:8080/quiz')
+        fetch('/quiz')
             .then(response => response.json())
             .then(quizs =>{
                 quizs.results.forEach(quiz => {
@@ -26,7 +27,7 @@ class QuizList extends Component {
     }
     
     render() { 
-        
+       
         console.log(this.state.quizs.length)
         if(this.state.quizs.length > 0){
             return(
