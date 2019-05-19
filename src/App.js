@@ -6,26 +6,21 @@ import 'materialize-css/dist/css/materialize.min.css';
 //ROUTES
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Link
 } from 'react-router-dom';
 //COMPONENTS
-import Navbar from './components/Navbar';
 //PAGES
 import LandingPage from "./pages/LandingPage";
-import QuizPage from './pages/QuizPage';
-import NewSurvey from './pages/NewSurvey';
-import LoginScreen from './pages/Login';
-
+import SurveyPage from "./pages/SurveyPage";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
           <Router>
-            <Route path="/" exact component={LandingPage}/>
-            <Route path="/surveys" component={QuizPage}/>
-            <Route path="/create-survey" component={NewSurvey}/>
-            <Route path="/login" component={LoginScreen}/>
+            <Route path="/" exact component = {LandingPage}/>
+            <Route path="/survey" component = {SurveyPage}/>
           </Router>
       </React.Fragment>
     );
