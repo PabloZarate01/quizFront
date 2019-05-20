@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 //STYLES
-import 'materialize-css/dist/css/materialize.min.css';
 //ROUTES
 import {
   BrowserRouter as Router,
