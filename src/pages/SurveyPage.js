@@ -28,8 +28,8 @@ class SurveyPage extends Component {
                 <div className="container">
                     <ul>
                         {surveys.map(survey =>(
-                            <li key={survey.id}>
-                                {survey.text}
+                            <li key={survey._id}>
+                                {survey.text} {JSON.stringify(survey.option.map((opt) => opt.text))}
                             </li>
                         ))}
                     </ul>
