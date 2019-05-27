@@ -35,7 +35,6 @@ class SurveysList extends Component {
             <Row>
                 <CardEx/>
                 <CardEx/>
-                <CardEx/>
             </Row>
             
         </div>
