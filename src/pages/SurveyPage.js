@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import CardEx from '../components/SurveyCard'
-import { Row, Col } from 'reactstrap'
+import { Row } from 'reactstrap'
 class SurveyPage extends Component {
     constructor(props) {
         super(props);

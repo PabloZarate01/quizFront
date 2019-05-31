@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import CardEx from './SurveyCard'
-import { Row, Col } from 'reactstrap'
+import { Row, Col, Button } from 'reactstrap'
 class SurveysList extends Component {
     constructor(props) {
         super(props);
@@ -24,19 +24,17 @@ class SurveysList extends Component {
         }else{
         return (
             <div className="container">
-            <ul>
-                {surveys.map(survey =>(
-                    <li key={survey._id}>
-                        {survey.text}
-                        {survey.option.map(opt => opt.text)}
-                    </li>
-                ))}
-            </ul>
             <Row>
-                <CardEx/>
-                <CardEx/>
-            </Row>
-            
+            {surveys.map(survey =>(
+                <CardEx
+                    key={survey._id}
+                    title={survey.title}
+                    text={survey.text}
+                    date={survey.createdAt}
+                    option={survey.option.map(opt => <Button>{opt.text}</Button>)}
+                />
+            ))}
+            </Row>            
         </div>
         );
     }

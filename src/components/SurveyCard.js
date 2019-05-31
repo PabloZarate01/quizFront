@@ -10,7 +10,7 @@ const SurveyCard = (props) => {
           <CardHeader>{props.title}</CardHeader>
           <CardBody>
             <CardText>{props.text}</CardText>
-            <Button>{props.option}</Button>
+            <CardBody>{props.option}</CardBody>
           </CardBody>
           <CardFooter>{props.date}</CardFooter>
         </Card>

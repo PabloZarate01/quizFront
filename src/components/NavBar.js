@@ -28,8 +28,8 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand href="#">reactstrap</NavbarBrand>
+        <Navbar color="dark" dark expand="md">
+          <NavbarBrand href="#">SURVAPP</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -37,7 +37,7 @@ export default class NavBar extends React.Component {
                 <NavLink href="/user/signup">signup</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link to="/survey">Surveys</Link></NavLink>
+                <NavLink href="/survey"></NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
