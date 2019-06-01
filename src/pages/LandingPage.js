@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import NavBar from '../components/NavBar'
-
+import {} from 'reactstrap'
 import { Container } from 'reactstrap' 
 class LandingPage extends Component {
     constructor(props) {
@@ -14,9 +14,12 @@ class LandingPage extends Component {
                 <NavBar/>
                 <Container>
                     <p>LandingPage</p>
-                    <Link to="survey">Surveys</Link>
-                    <Link to="createsurvey">Create surveys</Link>
-                    <Link to="survlist">List Survey</Link>
+                    <ul>
+                        <li><Link to="survey">Surveys</Link></li>
+                        <li><Link to="createsurvey">Create surveys</Link></li>
+                        <li><Link to="survlist">List Survey</Link></li>
+                        <li><Link to="signup">Sig Up</Link></li>
+                    </ul>  
                 </Container>
             </React.Fragment>
         );

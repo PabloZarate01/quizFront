@@ -1,6 +1,5 @@
 import React from 'react';
-import { Card, Button, CardHeader, CardFooter, CardBody,
-  CardTitle, CardText, Col, Row } from 'reactstrap';
+import { Card, CardHeader, CardFooter, CardBody, CardText, Col } from 'reactstrap';
 
 const SurveyCard = (props) => {
   return (

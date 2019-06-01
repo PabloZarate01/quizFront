@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import CardEx from './SurveyCard'
-import { Row, Col, Button } from 'reactstrap'
+import { Row, Button, Spinner } from 'reactstrap'
 class SurveysList extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +20,7 @@ class SurveysList extends Component {
     render() {
         var { isLoaded, surveys } = this.state;
         if(!isLoaded){
-            return <p>Loading...</p>
+            return <Spinner color="secondary"/>
         }else{
         return (
             <div className="container">
